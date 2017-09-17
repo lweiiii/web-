@@ -4,20 +4,17 @@
 
 # IntelliJ project files
 .idea
-*.iml
 out
 gen
 .gitignore
-.idea/modules.xml
-.idea/preferred-vcs.xml
-.idea/web_design_note.iml
-.idea/workspace.xml
+
+
 
 
 
 User-specific stuff:
 
-.idea/**/workspace.xml
+
 .idea/**/tasks.xml
 .idea/dictionaries
 Sensitive or high-churn files:
