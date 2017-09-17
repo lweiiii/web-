@@ -14,6 +14,8 @@
 >webstorm
 
 ## tips:
-[Git与WebStorm联结使用教程](http://blog.csdn.net/czy9996/article/details/53933946)
+[Git与WebStorm联结使用教程](http://blog.csdn.net/czy9996/article/details/53933946)    
+
+[ignore文件的配置部分](http://blog.csdn.net/u012852597/article/details/76014637)
 
 
