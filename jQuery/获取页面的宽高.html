@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>获取页面的宽高</title>
+    <script type="application/javascript" src="../Extlibs/jquery.min.js"></script>
+    <script type="application/javascript" >
+        $(document).ready(function () {
+           $(window).height();
+            $(window).width();
+            $("div").css({width:$(window).width()/3,height:$(window).height()/2});
+        });
+        //添加resize方法使两个div能自动适应大小
+        $(window).resize(function () {
+            $("div").css({width:$(window).width()/3,height:$(window).height()/2});
+        });
+
+    </script>
+
+    <style type="text/css">
+        div{
+            background-color: #3366CC;
+            margin-top: 200px;
+            float: left;
+            margin-right: 20px;
+        }
+        body{
+            padding: 0;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="abc">我是个DIV，我的宽高由jQuery负责</div>
+<div id="abc">我是个DIV，我的宽高由jQuery负责</div>
+</body>
+</html>
+
+
+<!-- -
+官方实例resize方法使用
+<html>
+<head>
+<script type="text/javascript" src="/jquery/jquery.js"></script>
+<script type="text/javascript">
+x=0;
+$(document).ready(function(){
+  $(window).resize(function() {
+    $("span").text(x+=1);
+  });
+  $("button").click(function(){
+    $(window).resize();
+  });
+});
+</script>
+</head>
+<body>
+<p>窗口的大小被调整了 <span>0</span> 次。</p>
+<p>请试着调整浏览器窗口的大小。</p>
+<button>触发窗口的 resize 事件</button>
+</body>
+</html>
+->
